@@ -1,0 +1,24 @@
+body {
+    background-color: #ffef4e;
+}
+
+p.colors{
+    color: #055d6b;
+    font-size: 20px;
+}
+p.colors:first-letter{
+    font-family: "Roboto Light", monospace;
+    font-style: italic;
+    color: #ff4b52;
+    font-weight: bold;
+    font-size: 2.0em;
+}
+
+h1.colors{
+    font-family: "Courier New", monospace;
+    font-size: 300%;
+    font-weight: bold;
+    color: #013a67;
+    text-align: center;
+    border: 2px dashed #0066bb;
+}
