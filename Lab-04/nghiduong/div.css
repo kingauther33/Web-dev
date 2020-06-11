@@ -40,16 +40,17 @@ ul li a:hover{
     color: black;
 }
 
-ul li.active a{
-    background-color: #FFFFFF;
-    color: black;
-}
+/*ul li.active a{*/
+/*    background-color: #FFFFFF;*/
+/*    color: black;*/
+/*}*/
 
 .mid{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../676875.jpg");
-    height: 834px;
-    background-size: auto;
+    height: 525px;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .text2{
@@ -59,11 +60,12 @@ ul li.active a{
     transform: translate(-50%,-50%);
     color: #FFFFFF;
     font-size: 80px;
+    text-shadow: 2px 2px 40px #ffef4e;
 }
 
 .content{
     position: absolute;
-    top: 60%;
+    top: 62%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: #FFFFFF;

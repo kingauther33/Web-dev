@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example for Transition</title>
+    <style type="text/css">
+        body{
+            font-family: "Courier New", sans-serif;
+            font-size: 1.5em;
+            letter-spacing: 0.1cm;
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            background: #000000;
+            transition: width 2s linear 1s;
+        }
+        div:hover{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <p><b>Note</b>: The example</p>
+    <div></div>
+    <p>Hover over the did element above to see the transition effect</p>
+    <p><b>Note:</b>The transition effect will wait 1 seconds before starting</p>
+</body>
+</html>

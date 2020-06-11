@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thumbnail</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 40px 80px;
+            background: #FFFFFF;
+            font: 70%Arial, Helvetica, sans-serif;
+            color: #555555;
+            line-height: 100%;
+        }
+        h1, h2{
+            font-size: 180%;
+            font-weight: normal;
+            color: #555555;
+        }
+        p{
+            margin: 1em 0;
+        }
+        p.text{
+            width: 500px;
+        }
+        a{
+            color: #f20;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #999;
+        }
+        img{
+            border: none;
+        }
+        ul#thumbnail, ul#thumbnail li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul#thumbnail li{
+            float: left;
+            margin-right: 0;
+            padding: 2px;
+        }
+        ul#thumbnail a{
+            display: block;
+            float: left;
+            width: 125px;
+            height: 135px;
+            line-height: 50px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+        ul#thumbnail a img{
+            float: left;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: contain;
+            height: 135px;
+        }
+        ul#thumbnail a:hover{
+            overflow: visible;
+            z-index: 1000;
+            border: none;
+        }
+        ul#thumbnail a:hover img{
+            border: 1px solid #999999;
+            background:  #FFFFFF;
+            padding: 2px;
+        }
+        ul#thumbnail:after, li#thumbnail:after{
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        ul#thumbnail, li#thumbnail{
+            display: block;
+        }
+        ul#thumbnail, li#thumbnail{
+            min-height: 1%;
+        }
+        * html ul#thumbnail, * html li#thumbnail{
+            height: 1%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Thumbnail</h2>
+    <ul id="thumbnail">
+        <li>
+        <a href="https://gaxstudio.com/i-have-no-idea-what-im-doing-dog-feat-1-620x400/" target="_blank">
+            <img src="NoIdeaDog.png" alt="no idea">
+        </a>
+        </li>
+    </ul>
+</body>
+</html>
