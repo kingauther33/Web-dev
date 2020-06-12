@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Animation</title>
     <style type="text/css">
+        body{
+            font-family: "Courier New", sans-serif;
+            font-size: 110%;
+            letter-spacing: 0.08cm;
+        }
         div{
             width: 200px;
             height: 200px;
@@ -16,10 +21,19 @@
             animation-delay: 1s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
+            animation-play-state: running;
+        }
+        @keyframes myfirst {
+            0%{background: red; left: 0; top: 0;}
+            25%{background: yellow; left: 300px; top: 0;}
+            50%{background: blue; left: 300px;top: 300px;}
+            75%{background:green; left: 0; top: 300px;}
+            100%{background:red; left: 0; top: 0;}
         }
     </style>
 </head>
 <body>
-
+    <p>This is my div</p>
+    <div></div>
 </body>
 </html>
