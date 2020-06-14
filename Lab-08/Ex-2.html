@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 2</title>
+</head>
+<body>
+    <form action="awaef.php" method="get">
+
+        <label for="name1">Name: </label> <br>
+            <input type="text" value="" id="name1" name="first" size="8" tabindex="1"
+                placeholder="First Name" required autofocus/>
+        <label for="name2"></label>
+            <input type="text" value="" id="name2" name="last" size="14" tabindex="2"
+                placeholder="Last Name" required /> <br>
+
+        <label for="phonecode">Phone number: </label>
+            <input type="tel" value="" size="4" maxlength="5" id="phonecode"
+                placeholder="Code" pattern="[+0-9]{1,4}" tabindex="11"
+                   title="Format: (+)99(99)" required/>
+        <label for="phonenum"></label>
+            <input type="tel" value="" size="10" maxlength="12" id="phonenum"
+                placeholder="Num" pattern="[0-9]{8, }" tabindex="12"
+                    title="Minium 8 numbers" required/> <br>
+
+        <label for="email1">Email Address:</label>
+            <input type="email" value="" id="email1" name="emailid"
+                maxlength="255" tabindex="5" placeholder="Email Address"
+                   required multiple autocomplete="off" /> <br>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
