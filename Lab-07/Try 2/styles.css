@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 110%;
+    font-family: "Roboto Thin", sans-serif;
+}
+
+.header{
+    height: 80px;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(28, 208, 122, 0.4), rgba(28, 208, 122, 1));
+    display: flex;
+    text-transform: uppercase;
+}
+
+.header:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+
+.header:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+
+.header img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.product ul{
+    list-style-type: none;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 130%;
+}
+
+.product ul li{
+    display: inline;
+    padding: 0 20px;
+}
+
+.header a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.product ul li a:hover{
+    color: black;
+    background-color: #FFFFFF;
+    transition: 0.6s;
+}
+
+.author{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    text-shadow: 2px 3px 8px blueviolet;
+}
+
+.main{
+    position: relative;
+    width: 1200px;
+    margin: 15px auto;
+    display: flex;
+}
+.main .brand{
+    width: 546px;
+    height: 500px;
+    margin-right: 60px;
+    background-image: url("back1.jpg");
+}
+
+.main .brand:before, .main .brand:after{
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: radial-gradient(closest-side, #fff, #fff 50%, transparent 50%);
+    background-size: 30px 30px;
+    background-position: 0 15px;
+    background-repeat: repeat-x;
+}
+
+.main .brand:after {
+    background: radial-gradient(closest-side, transparent, transparent 50%, #fff 50%);
+    background-size: 30px 30px;
+    background-position: 15px -15px;
+    background-repeat: repeat-x;
+    bottom: -15px;
+}
+
+.head1{
+    text-align: center;
+    font-size: 180%;
+    font-family: "Courier New", sans-serif;
+    letter-spacing: 0.3em;
+}
