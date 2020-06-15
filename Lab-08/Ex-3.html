@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 3</title>
+</head>
+<body>
+    <form action="waefwaf.php" method="get">
+
+        <label for="data1">Select the mode of payment:</label>
+        <input type="text" name="payment" id="data1" list="paymentlist" /> <br>
+            <datalist id="paymentlist">
+                <option value="Cash-on-Delivery"></option>
+                <option value="Net Banking"></option>
+                <option value="Credit Card">
+                <option value="Debit Card">
+                <option value="e-Gift Voucher">
+            </datalist>
+
+        <label for="tracks">Downloading Status: </label>
+            <progress value="35" max="100" id="tracks"></progress> <br>
+
+        <label for="meter1">Total score of marks: </label>
+        0 &nbsp; <meter min="0" max="400" value="200" title="numbers scored"
+                    low="120" high="300" id="meter1"></meter>
+    </form>
+    <form oninput="x.value = parseInt(type.value)* parseInt(duration.value)">
+        <label for="member">Membership Type:</label>
+        <select name="type" id="member">
+            <option value="400">Gold - 400$</option>
+            <option value="500">Silver - 500$</option>
+            <option value="600">Platinum - 600$</option>
+        </select>
+        <label for="dur">Duration [yeards]:</label>
+            <input type="number" id="dur" value="0" name="duration" min="1" max="5" step="1" />
+        <label>Annual Payment Fees: $</label>
+            <output name="x" for="type duration"></output>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
